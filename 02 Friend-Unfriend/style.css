@@ -1,0 +1,81 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(97, 97, 253);
+  color: #f0f0f0;
+  font-size: 12px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .card{
+    width: 25rem;
+    /* height: 35rem; */
+    color: #0c0c0c;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.7rem;
+    gap: 0.5rem;
+}
+
+main .card .imgContainer{
+    width: 100%;
+    min-height: 50%;
+    border-radius: 0.8rem;
+}
+
+main .card .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.8rem;
+}
+
+main .card #name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main .card #status{
+    color: red;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+
+main .card #btn{
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 87, 58);
+    cursor: pointer;
+}
+
+@media  screen and (max-width:"") {
+    
+}
