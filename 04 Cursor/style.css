@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BBH Sans Hegarty", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #1f1a1a;
+  color: #f0f0f0;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .text{
+    font-size: 8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+main .text span:nth-child(1){
+    color: #8CE4FF;
+}
+main .text span:nth-child(2){
+    color: #FEEE91;
+}
+main .text span:nth-child(3){
+    color: #FFA239;
+}
+main .text span:nth-child(4){
+    color: #FF5656;
+}
+main .text span:nth-child(5){
+    color: #B7A3E3;
+}
+main .text span:nth-child(6){
+    color: #C2E2FA;
+}
+main .text span:nth-child(7){
+    color: #FFF1CB;
+}
+main .text span:nth-child(8){
+    color: #FF8F8F;
+}
+
+main .cursor{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #f0f0f0;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+}
