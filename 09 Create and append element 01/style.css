@@ -1,0 +1,51 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ddd;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body{
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    position: relative;
+}
+
+main button{
+    padding: 0.4rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    color: #ddd;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: red;
+    
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    transform: all ease 0.2s;
+}
+
+main button:active{
+    scale: 0.94;
+}
+
+main h1{
+    position: absolute;
+    white-space: nowrap;
+}
