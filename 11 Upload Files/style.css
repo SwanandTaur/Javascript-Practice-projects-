@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #inp{
+    display: none;
+}
+
+main button{
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(25, 141, 96);
+    color: #ddd;
+}
+
+main button:hover{
+    background-color: rgb(19, 109, 74);
+}
+
+main button:active{
+    scale: 1.05;
+}
