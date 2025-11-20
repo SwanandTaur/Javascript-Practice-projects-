@@ -1,0 +1,100 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ddd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+main .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+main .inputs input{
+    font-size: 1rem;
+    background-color: #ddd;
+    color: #000;
+    width: 20rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 0.4rem 1rem;
+}
+
+main .inputs #submit{
+    font-weight: 600;
+    background-color: royalblue;
+    width: auto;
+    padding: 0.4rem 2rem;
+    cursor: pointer;
+    color: #ddd;
+}
+
+main .inputs #submit:active{
+    scale: 0.94;
+}
+
+main .cards{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main .cards .card{
+    border-radius: 0.3rem;
+    background-color: darkcyan;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+main .cards .card .profilePic{
+    height: 4rem;
+    width:4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main .cards .card .profilePic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .cards .card .name{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main .cards .card .proffession{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+main .cards .card .intro{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
