@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #111;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar{
+    display: none;
+}
+
+main .cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+main .cards .card{
+    max-width: 100%;
+    height: 13rem;
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 0.3rem #111;
+}
+
+main .cards .card img{
+    height: 100%;
+    width: 40%;
+    object-fit: cover;
+}
+
+main .cards .card .info{
+    width: 60%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .cards .card .info .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .cards .card .info .top .hotelName{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main .cards .card .info .top .rent{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+main .cards .card .info .about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .cards .card .info .about .aboutHotel{
+    display: flex;
+    gap: 1rem;
+}
+
+main .cards .card .info .about .aboutHotel .rating{
+    font-weight: 500;
+}
+
+main .cards .card .info .about .aboutHotel .rating i{
+    color: rgb(236, 210, 61);
+}
+
+main .cards .card .info .about .offer{
+    font-size: 0.7rem;
+}
+
+main .cards .card .info .tags{
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+main .cards .card .info .tags i{
+    padding: 0 0.3rem;
+}
+
+main .cards .card .info .bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+main .cards .card .info .bottom i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+main .cards .card .info .bottom .book{
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: purple;
+    color: #eee;
+    font-weight: 500;
+    user-select: none;
+}
+main .cards .card .info .bottom .book:active{
+    scale: 0.94;
+}
+
+main .cards .card .info .bottom .book i{
+    font-size: 1rem;
+    color: #eee;
+}
+
+@media screen and (max-width:950px) {
+    html,body{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:750px) {
+    html,body{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:550px) {
+    html,body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:450px) {
+    html,body{
+        font-size: 8px;
+    }
+}
