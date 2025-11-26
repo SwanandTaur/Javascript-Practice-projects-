@@ -1,0 +1,126 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:#111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .post{
+    height: 25rem;
+    width: 20rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0;
+    overflow: hidden;
+}
+
+main .post .top{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+main .post .top .left{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+main .post .top .left .logo{
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main .post .top .left .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+main .post .top .left .userName{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+main .post .top i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+main .post .postImg{
+    height: 76%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .post .postImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+ 
+    overflow: hidden;
+}
+
+main .post .postImg i{
+   
+    position: absolute;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    background: url(https://www.shutterstock.com/image-vector/colorful-line-background-inspired-by-260nw-566284384.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  transform: translate(-50%,-50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+    pointer-events: none;
+}
+
+main .post .bottom{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+main .post .bottom .left{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main .post .bottom i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+
