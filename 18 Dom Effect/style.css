@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eee;
+}
+
+:root {
+  --x: 150px;
+  --y: 150px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background-image:url(https://content.pexels.com/images/canva/ai-generated-ad/off-theme/red_adrenaline-full.jpg) ;
+  background-size: cover; */
+  overflow: hidden;
+  position: relative;
+}
+body video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(150px at var(--x) var(--y), #eeeeee00, #000000ee);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
